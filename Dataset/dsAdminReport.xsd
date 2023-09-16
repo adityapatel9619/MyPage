@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAdminReport" targetNamespace="http://tempuri.org/dsAdminReport.xsd" xmlns:mstns="http://tempuri.org/dsAdminReport.xsd" xmlns="http://tempuri.org/dsAdminReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MyPageConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MyPageConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MyPageConnectionString1.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MyPageConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MyPageConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MyPageConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAdminReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAdminReport" msprop:Generator_UserDSName="dsAdminReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtAdminReport" msprop:Generator_TableClassName="dtAdminReportDataTable" msprop:Generator_TableVarName="tabledtAdminReport" msprop:Generator_TablePropName="dtAdminReport" msprop:Generator_RowDeletingName="dtAdminReportRowDeleting" msprop:Generator_RowChangingName="dtAdminReportRowChanging" msprop:Generator_RowEvHandlerName="dtAdminReportRowChangeEventHandler" msprop:Generator_RowDeletedName="dtAdminReportRowDeleted" msprop:Generator_UserTableName="dtAdminReport" msprop:Generator_RowChangedName="dtAdminReportRowChanged" msprop:Generator_RowEvArgName="dtAdminReportRowChangeEvent" msprop:Generator_RowClassName="dtAdminReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sAdminName" msprop:Generator_ColumnVarNameInTable="columnsAdminName" msprop:Generator_ColumnPropNameInRow="sAdminName" msprop:Generator_ColumnPropNameInTable="sAdminNameColumn" msprop:Generator_UserColumnName="sAdminName" type="xs:string" minOccurs="0" />
+              <xs:element name="sAdminEmailId" msprop:Generator_ColumnVarNameInTable="columnsAdminEmailId" msprop:Generator_ColumnPropNameInRow="sAdminEmailId" msprop:Generator_ColumnPropNameInTable="sAdminEmailIdColumn" msprop:Generator_UserColumnName="sAdminEmailId" type="xs:string" minOccurs="0" />
+              <xs:element name="sAdminUKID" msprop:Generator_ColumnVarNameInTable="columnsAdminUKID" msprop:Generator_ColumnPropNameInRow="sAdminUKID" msprop:Generator_ColumnPropNameInTable="sAdminUKIDColumn" msprop:Generator_UserColumnName="sAdminUKID" type="xs:string" minOccurs="0" />
+              <xs:element name="sAdminDesignation" msprop:Generator_ColumnVarNameInTable="columnsAdminDesignation" msprop:Generator_ColumnPropNameInRow="sAdminDesignation" msprop:Generator_ColumnPropNameInTable="sAdminDesignationColumn" msprop:Generator_UserColumnName="sAdminDesignation" type="xs:string" minOccurs="0" />
+              <xs:element name="sAdminPhone" msprop:Generator_ColumnVarNameInTable="columnsAdminPhone" msprop:Generator_ColumnPropNameInRow="sAdminPhone" msprop:Generator_ColumnPropNameInTable="sAdminPhoneColumn" msprop:Generator_UserColumnName="sAdminPhone" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

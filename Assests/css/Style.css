@@ -1,0 +1,39 @@
+﻿/*.tabs {
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+
+
+
+.MenuStyle{
+    background-color:yellow;
+}
+
+.tab {
+    border: solid 1px black;
+    background-color: #eeeeee;
+    padding: 2px 10px;
+    
+}
+
+.selectedTab {
+    background-color: white;
+    border-bottom: solid 1px white;
+}
+
+.tabContents {
+    border: solid 1px black;
+    padding: 40px;
+    background-color: white;
+    
+}
+*/
+
+.tabs{
+    margin-left:10px;
+}
+
+.tabs:hover {
+    background-color: bisque;
+}

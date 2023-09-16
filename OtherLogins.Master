@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OtherLogins.master.cs" Inherits="MyPage.OtherLogins" %>
+
+<!DOCTYPE html>
+
+<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+<head runat="server">
+    <title>Login</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Assests/css/tailwind.output.css" />
+    
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="Assests/js/init-alpine.js"></script>
+
+    <%-- Sweet Alert --%>
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+    <%-- Sweet Alert --%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
+            <div class="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
+                <div class="flex flex-col overflow-y-auto md:flex-row">
+                    <div class="h-32 md:h-auto md:w-1/2">
+                        <asp:Image  CssClass="object-cover w-full h-full dark:hidden" runat="server" ImageUrl="~/Assests/img/login-office.jpeg" AlternateText="Office" />
+                        <asp:Image CssClass="hidden object-cover w-full h-full dark:block" runat="server" ImageUrl="~/Assests/img/login-office-dark.jpeg" AlternateText="Office Dark" />
+                    </div>
+                    <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+                        <div class="w-full">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </form>
+</body>
+</html>
